@@ -1,0 +1,50 @@
+.nav-logo {
+    width: 50px;
+    margin: 5px;
+}
+
+.header {
+    height: 80px;
+}
+
+#message-scroll {
+    overflow: auto;
+    max-height: calc(100vh - 80px);
+}
+
+#message-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.email-message {
+    height: 80px;
+    width: calc(100% - 10px);
+    margin-top: 7px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+.md-tool-bar {
+    height: 60px;
+}
+
+.md-tool-wrapper {
+    width: 80%;
+}
+
+.md-tool {
+    font-size: 38px !important;
+}
+
+.md-tool:hover {
+    border-bottom: solid 2px white !important;
+}
+
+#email-text-area {
+    height: calc(100% - 60px);
+}
+
+a {
+    color: white !important;
+}
+
