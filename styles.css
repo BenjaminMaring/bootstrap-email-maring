@@ -1,15 +1,27 @@
+.font {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.blue {
+    background-color: #006494;
+}
+
+.dark-blue {
+    background-color: #003554;
+}
+
+.light-blue {
+    background-color: #0582ca;
+}
+
 .nav-logo {
     width: 50px;
     margin: 5px;
 }
 
-.header {
-    height: 80px;
-}
-
 #message-scroll {
     overflow: auto;
-    max-height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
 }
 
 #message-scroll::-webkit-scrollbar {
@@ -18,10 +30,16 @@
 
 .email-message {
     height: 80px;
-    width: calc(100% - 10px);
-    margin-top: 7px;
-    margin-left: 5px;
-    border-radius: 10px;
+}
+
+.email {
+    text-decoration: none;
+    transition: background-color ease 100ms;
+}
+
+.email:hover, .active {
+    background-color: #212529;
+    transition: background-color ease 100ms;
 }
 
 .md-tool-bar {
@@ -33,18 +51,18 @@
 }
 
 .md-tool {
-    font-size: 38px !important;
+    background-color: transparent;
+    border: none;
 }
 
-.md-tool:hover {
-    border-bottom: solid 2px white !important;
+.md-tool-size {
+    font-size: 38px;
 }
 
 #email-text-area {
     height: calc(100% - 60px);
 }
 
-a {
-    color: white !important;
+.white {
+    color: #ffffff !important;
 }
-
