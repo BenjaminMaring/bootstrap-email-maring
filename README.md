@@ -54,3 +54,11 @@ added uniform font from google fonts
 added email content
 changed tool bar into buttons
 started on offcanvas for sending emails
+
+
+10/2 
+9-10am 
+finished offcanvas for sending emails
+
+6:30-7:30
+removed offcanvis for sending emails and changed it to a modal
