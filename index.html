@@ -48,19 +48,25 @@
                     <!-- Code for offcanvas -->
                     <div class="offcanvas-body d-lg-none d-flex flex-column justify-content-between border-top border-2 border-primary">
                         <!-- search bar -->
-                        <form class="d-flex d-md-none form-inline justify-content-between">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                        <!--  offcanvas file directory -->
-                        <div>
+                        <div class="d-flex flex-column">
+                            <form class="d-flex d-md-none form-inline justify-content-between m-2">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                            <!--  offcanvas file directory and compose button-->
+                            <button class=" d-md-none navbar-toggler m-2"  type="button" data-bs-toggle="offcanvas" data-bs-target="#compose">
+                                <span class="material-symbols-outlined">edit_square</span>
+                            </button>
+                        </div>
+
+                        <div class="w-100 d-flex flex-column justify-content-center align-items-center">
                             <h4><a href="" class="nav-link mb-2">Inbox</a></h4>
                             <h4><a href="" class="nav-link mb-2">Junk</a></h4>
                             <h4><a href="" class="nav-link mb-2">Deleted</a></h4>
                         </div>
                         <!-- settings icon -->
-                        <div class="d-md-none">
-                            <span class="material-symbols-outlined m-5">edit_square</span>
+                        <div class="d-lg-none w-100 d-flex justify-content-center">
+                            <span class="material-symbols-outlined m-5">settings</span>
                         </div>
                     </div>
                 </div>
@@ -68,9 +74,15 @@
         </nav>
 
         <!-- offcanvas for sending emails -->
-        <div>
-            
+        <div class="offcanvas offcanvas-end align-content-center d-flex flex-column" id="compose">
+            <form class="d-flex flex-column">
+                <input placeholder="To:">
+                <input placeholder="CC:">
+                <input placeholder="Subject:">
+                <textarea></textarea>
+            </form>
         </div>
+
 
         <div class="container-fluid d-flex p-0">
             <!--  File directory for lg screens-->
@@ -147,7 +159,7 @@
                     <div class="col-md-12">
                         <div class="dark-blue md-tool-bar d-flex justify-content-center align-items-center w-100">
                             <div class="w-75 d-flex justify-content-evenly align-content-center">
-                                <button class="md-tool"><span class="material-symbols-outlined md-tool-size white">edit_square</span></button>
+                                <button class="md-tool" type="button" data-bs-toggle="offcanvas" data-bs-target="#compose"><span class="material-symbols-outlined md-tool-size white">edit_square</span></button>
                                 <button class="md-tool"><span class="material-symbols-outlined md-tool-size white">reply</span></button>
                                 <button class="md-tool"><span class="material-symbols-outlined md-tool-size white">reply_all</span></button>
                                 <button class="md-tool"><span class="material-symbols-outlined md-tool-size white">delete</span></button>

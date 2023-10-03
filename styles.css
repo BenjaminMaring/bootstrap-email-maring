@@ -53,6 +53,7 @@
 .md-tool {
     background-color: transparent;
     border: none;
+    color: white;
 }
 
 .md-tool-size {
@@ -65,4 +66,12 @@
 
 .white {
     color: #ffffff !important;
+}
+
+input {
+    border: none;
+}
+
+.compose {
+    border-bottom: solid 1px black;
 }
