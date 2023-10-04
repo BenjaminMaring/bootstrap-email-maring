@@ -62,3 +62,7 @@ finished offcanvas for sending emails
 
 6:30-7:30
 removed offcanvis for sending emails and changed it to a modal
+
+10/4
+9am-10am 
+finished content display for email, everything is finished. Only thing would be to add a view on mobile view to view the messages.
