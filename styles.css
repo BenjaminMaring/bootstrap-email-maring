@@ -34,12 +34,23 @@
 
 .email {
     text-decoration: none;
-    transition: background-color ease 100ms;
+    background-color: transparent;
+    transition: background-color ease 200ms;
+}
+
+.email-content {
+    overflow-x: auto;
+    height: calc(100vh - 215px);
+    padding: 5px;
+}
+
+.email-content > p {
+    color: white;
 }
 
 .email:hover, .active {
     background-color: #212529;
-    transition: background-color ease 100ms;
+    transition: background-color ease 200ms;
 }
 
 .md-tool-bar {
